@@ -27,13 +27,20 @@ public interface ISysMenuService extends IBaseService<SysMenu> {
      */
     SysMenu findMenuByRoleId(Set<Integer> roleIds);
 
+    /**
+     * 通过角色id查询到用户到菜单信息
+     * @param roleIds 用户的id
+     * @return
+     */
+    SysMenu findMenuByRoleIdAndSystemKey(Set<Integer> roleIds,String systemKey);
+
 
     /**
      * 获取全部的树形菜单
      * @param status 菜单结构信息
      * @return
      */
-    SysMenu getRootAllTree(Integer status);
+    SysMenu getRootAllTree(Integer status,String systemKey);
 
 
     /**

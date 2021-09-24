@@ -58,7 +58,7 @@ public interface ISysUserService extends IBaseService<SysUser> {
      * @return 返回用户的基本信息
      * @throws AdminException 异常信息
      */
-    UserInfoModel getUserAllInfo(Integer userId) throws AdminException;
+    UserInfoModel getUserAllInfo(Integer userId,String systemKey) throws AdminException;
 
 
     /**

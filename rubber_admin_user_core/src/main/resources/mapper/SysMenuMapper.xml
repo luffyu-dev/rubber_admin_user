@@ -29,7 +29,7 @@
 
 
     <sql id="selectMenu">
-        select a.menu_id, a.menu_name, a.parent_id, a.seq, a.url, a.menu_type,a.auth_key, a.status, icon, a.create_by, a.create_time, a.update_time,a.update_by
+        select a.menu_id, a.menu_name, a.parent_id, a.seq, a.url, a.menu_type,a.auth_key, a.status, icon, a.create_by, a.create_time, a.update_time,a.update_by,a.system_key
     </sql>
 
 
@@ -41,6 +41,17 @@
         <foreach collection="roleIds" open="(" separator="," close=")" item="roleId">
             #{roleId}
         </foreach>
+    </select>
+
+    <select id="findByRoleIdAndSystemKey" resultMap="baseMenuResult" >
+        <include refid="selectMenu"/>
+        from sys_menu as a
+        left join sys_role_menu as rm on (a.menu_id = rm.menu_id)
+        where rm.role_id in
+        <foreach collection="roleIds" open="(" separator="," close=")" item="roleId">
+            #{roleId}
+        </foreach>
+         and a.system_key = #{systemKey}
     </select>
 
 

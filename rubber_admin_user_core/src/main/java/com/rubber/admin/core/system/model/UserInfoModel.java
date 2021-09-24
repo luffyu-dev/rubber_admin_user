@@ -39,6 +39,9 @@ public class UserInfoModel implements Serializable {
     private List<SysRole> sysRoles;
 
 
+    private String systemKey;
+
+
     public UserInfoModel() {
     }
 

@@ -28,9 +28,9 @@ public class UserController {
      * @return
      */
     @GetMapping("/info")
-    public ResultMsg info() throws AdminException {
+    public ResultMsg info(String systemIndex) throws AdminException {
         Integer userId = ServletUtils.getLoginUserId();
-        UserInfoModel loginUserInfo = sysUserService.getUserAllInfo(userId);
+        UserInfoModel loginUserInfo = sysUserService.getUserAllInfo(userId,systemIndex);
         return ResultMsg.success(loginUserInfo);
     }
 

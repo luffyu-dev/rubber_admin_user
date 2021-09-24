@@ -102,6 +102,11 @@ public class SysMenu extends BaseEntity {
      */
     private String remark;
 
+    /**
+     * 所属系统的key
+     */
+    private String systemKey;
+
 
     /**
      * 父级菜单

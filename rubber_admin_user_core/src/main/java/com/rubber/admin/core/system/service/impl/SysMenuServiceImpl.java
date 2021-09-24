@@ -2,6 +2,7 @@ package com.rubber.admin.core.system.service.impl;
 
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.collection.CollectionUtil;
+import cn.hutool.core.util.StrUtil;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.rubber.admin.core.authorize.AuthorizeKeys;
 import com.rubber.admin.core.authorize.service.IAuthGroupConfigService;
@@ -67,11 +68,26 @@ public class SysMenuServiceImpl extends BaseAdminService<SysMenuMapper, SysMenu>
         return getAllTree(byRoleId);
     }
 
+    /**
+     * 获取某个角色的菜单结构
+     * @param roleIds 角色id
+     * @return
+     */
+    @Override
+    public SysMenu findMenuByRoleIdAndSystemKey(Set<Integer> roleIds,String systemKey) {
+        List<SysMenu> byRoleId = null;
+        if(CollectionUtil.isNotEmpty(roleIds)){
+            Integer[] ids = new Integer[roleIds.size()];
+            ids = roleIds.toArray(ids);
+            byRoleId = getBaseMapper().findByRoleId(ids);
+        }
+        return getAllTree(byRoleId);
+    }
 
 
     @Override
-    public SysMenu getRootAllTree(Integer status) {
-        List<SysMenu> all = getAll(status);
+    public SysMenu getRootAllTree(Integer status,String systemKey) {
+        List<SysMenu> all = getAll(status,systemKey);
         return getAllTree(all);
     }
 
@@ -81,10 +97,13 @@ public class SysMenuServiceImpl extends BaseAdminService<SysMenuMapper, SysMenu>
      * @param status 状态信息
      * @return 返回状态列表
      */
-    private List<SysMenu> getAll(Integer status) {
+    private List<SysMenu> getAll(Integer status,String systemKey) {
         QueryWrapper<SysMenu> queryWrapper = new QueryWrapper<>();
         if(status != null){
             queryWrapper.eq("status",status);
+        }
+        if (StrUtil.isNotEmpty(systemKey)){
+            queryWrapper.eq("system_key",systemKey);
         }
         queryWrapper.orderByDesc("seq");
         return list(queryWrapper);

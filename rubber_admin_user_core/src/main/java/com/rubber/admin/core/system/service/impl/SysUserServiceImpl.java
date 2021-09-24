@@ -115,8 +115,9 @@ public class SysUserServiceImpl extends BaseAdminService<SysUserMapper, SysUser>
 
 
     @Override
-    public UserInfoModel getUserAllInfo(Integer userId) throws AdminException {
+    public UserInfoModel getUserAllInfo(Integer userId,String systemKey) throws AdminException {
         UserInfoModel userInfoModel = this.getUserInfo(userId);
+        userInfoModel.setSystemKey(systemKey);
         findUserMenuOptions(userInfoModel);
         return userInfoModel;
     }
@@ -173,7 +174,7 @@ public class SysUserServiceImpl extends BaseAdminService<SysUserMapper, SysUser>
             roleIds = userInfoModel.getSysRoles().stream().map(SysRole::getRoleId).collect(Collectors.toSet());
         }
         //查询菜单
-        SysMenu rootMenu = sysMenuService.findMenuByRoleId(roleIds);
+        SysMenu rootMenu = sysMenuService.findMenuByRoleIdAndSystemKey(roleIds,userInfoModel.getSystemKey());
         List<SysMenu> children = rootMenu.getChildren();
         if (children != null){
             //查询权限信息
@@ -207,11 +208,13 @@ public class SysUserServiceImpl extends BaseAdminService<SysUserMapper, SysUser>
      * @param userInfoModel
      */
     private void doFindSuperUserAllInfo(UserInfoModel userInfoModel){
-        List<SysMenu> allTree = sysMenuService.getRootAllTree(StatusEnums.NORMAL).getChildren();
+        List<SysMenu> allTree = sysMenuService.getRootAllTree(StatusEnums.NORMAL,userInfoModel.getSystemKey()).getChildren();
         Set<String> options = new HashSet<>();
         options.add("ALL");
-        for (SysMenu sysMenu:allTree){
-            reForSuperUserList(sysMenu,options);
+        if (CollUtil.isNotEmpty(allTree)){
+            for (SysMenu sysMenu:allTree){
+                reForSuperUserList(sysMenu,options);
+            }
         }
         userInfoModel.setSysMenus(allTree);
     }
