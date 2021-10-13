@@ -42,9 +42,9 @@ public class SysMenuController extends BaseAdminController {
      * 获取菜单的树形结构
      * @return 返回系统中全部菜单的树形结构
      */
-    @GetMapping("/tree")
-    public ResultMsg getMenuAllTree(Integer status){
-        SysMenu sysMenus = sysMenuService.getRootAllTree(status,null);
+    @GetMapping("/tree/{systemKey}")
+    public ResultMsg getMenuAllTree(Integer status,@PathVariable("systemKey")String systemKey){
+        SysMenu sysMenus = sysMenuService.getRootAllTree(status,systemKey);
         return ResultMsg.success(sysMenus);
     }
 
