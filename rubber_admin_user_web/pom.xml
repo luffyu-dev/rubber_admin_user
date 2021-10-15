@@ -33,15 +33,20 @@
         </dependency>
 
         <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-context</artifactId>
+        </dependency>
+
+        <dependency>
             <groupId>com.rubber.admin</groupId>
             <artifactId>rubber_admin_user_security</artifactId>
             <version>${rubber.version}</version>
         </dependency>
 
-        <dependency>
-            <groupId>com.rubber</groupId>
-            <artifactId>base_config</artifactId>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.rubber</groupId>-->
+<!--            <artifactId>base_config</artifactId>-->
+<!--        </dependency>-->
 
     </dependencies>
 
