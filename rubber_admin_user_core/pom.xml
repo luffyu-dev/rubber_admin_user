@@ -21,6 +21,11 @@
         </dependency>
 
         <dependency>
+            <groupId>com.rubber</groupId>
+            <artifactId>base_log</artifactId>
+        </dependency>
+
+        <dependency>
             <groupId>org.freemarker</groupId>
             <artifactId>freemarker</artifactId>
             <version>2.3.28</version>

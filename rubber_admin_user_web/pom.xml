@@ -43,10 +43,10 @@
             <version>${rubber.version}</version>
         </dependency>
 
-<!--        <dependency>-->
-<!--            <groupId>com.rubber</groupId>-->
-<!--            <artifactId>base_config</artifactId>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>com.rubber</groupId>
+            <artifactId>base_config</artifactId>
+        </dependency>
 
     </dependencies>
 
