@@ -1,8 +1,8 @@
 package com.rubber.admin.core.tools;
 
 
-import com.rubber.common.utils.result.code.SysCode;
-import com.rubber.common.utils.result.exception.IResultException;
+import com.rubber.base.components.util.result.code.SysCode;
+import com.rubber.base.components.util.result.exception.IResultException;
 
 /**
  * @author luffyu

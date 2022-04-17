@@ -5,7 +5,7 @@ import com.rubber.admin.core.system.entity.SysUser;
 import com.rubber.admin.core.system.service.ISysUserService;
 import com.rubber.admin.security.login.bean.LoginBean;
 import com.rubber.admin.security.login.bean.LoginUserDetail;
-import com.rubber.common.utils.result.ResultMsg;
+import com.rubber.base.components.util.result.ResultMsg;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;

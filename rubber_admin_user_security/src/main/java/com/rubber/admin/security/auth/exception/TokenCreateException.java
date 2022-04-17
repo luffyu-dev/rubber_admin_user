@@ -1,6 +1,6 @@
 package com.rubber.admin.security.auth.exception;
 
-import com.rubber.common.utils.result.code.ICodeHandle;
+import com.rubber.base.components.util.result.code.ICodeHandle;
 import org.springframework.security.core.AuthenticationException;
 
 /**

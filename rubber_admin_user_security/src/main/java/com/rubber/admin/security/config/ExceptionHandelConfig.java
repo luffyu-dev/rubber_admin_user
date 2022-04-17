@@ -3,9 +3,10 @@ package com.rubber.admin.security.config;
 import com.rubber.admin.core.exceptions.AdminException;
 import com.rubber.admin.core.exceptions.AdminRunTimeException;
 import com.rubber.admin.core.tools.ExceptionUtils;
-import com.rubber.common.utils.result.IResultHandle;
-import com.rubber.common.utils.result.ResultMsg;
-import com.rubber.common.utils.result.exception.IResultException;
+
+import com.rubber.base.components.util.result.IResultHandle;
+import com.rubber.base.components.util.result.ResultMsg;
+import com.rubber.base.components.util.result.exception.IResultException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;

@@ -29,7 +29,7 @@ import com.rubber.admin.core.system.service.ISysUserRoleService;
 import com.rubber.admin.core.system.service.ISysUserService;
 import com.rubber.admin.core.tools.CacheCommonKeys;
 import com.rubber.admin.core.tools.ServletUtils;
-import com.rubber.common.utils.result.code.SysCode;
+import com.rubber.base.components.util.result.code.SysCode;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

@@ -11,7 +11,7 @@ import com.rubber.admin.core.system.mapper.SysDeptMapper;
 import com.rubber.admin.core.system.service.ISysDeptService;
 import com.rubber.admin.core.tools.ArrayHashMap;
 import com.rubber.admin.core.tools.ServletUtils;
-import com.rubber.common.utils.result.code.SysCode;
+import com.rubber.base.components.util.result.code.SysCode;
 import org.springframework.stereotype.Service;
 
 import javax.validation.constraints.NotNull;

@@ -9,7 +9,7 @@ import com.rubber.admin.core.system.exception.RoleException;
 import com.rubber.admin.core.system.exception.UserException;
 import com.rubber.admin.core.system.model.UserInfoModel;
 import com.rubber.admin.core.system.service.ISysUserService;
-import com.rubber.common.utils.result.ResultMsg;
+import com.rubber.base.components.util.result.ResultMsg;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;

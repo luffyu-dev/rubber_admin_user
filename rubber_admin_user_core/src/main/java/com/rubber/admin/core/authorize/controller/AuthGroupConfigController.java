@@ -7,7 +7,7 @@ import com.rubber.admin.core.authorize.service.IAuthGroupConfigService;
 import com.rubber.admin.core.base.BaseAdminController;
 import com.rubber.admin.core.enums.AdminCode;
 import com.rubber.admin.core.plugins.page.PageModel;
-import com.rubber.common.utils.result.ResultMsg;
+import com.rubber.base.components.util.result.ResultMsg;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;

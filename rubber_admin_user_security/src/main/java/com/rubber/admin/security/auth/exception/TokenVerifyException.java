@@ -1,7 +1,7 @@
 package com.rubber.admin.security.auth.exception;
 
 import com.rubber.admin.core.exceptions.AdminRunTimeException;
-import com.rubber.common.utils.result.code.ICodeHandle;
+import com.rubber.base.components.util.result.code.ICodeHandle;
 
 /**
  * @author luffyu

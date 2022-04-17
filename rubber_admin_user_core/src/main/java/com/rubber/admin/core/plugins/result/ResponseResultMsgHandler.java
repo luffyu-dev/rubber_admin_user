@@ -1,6 +1,6 @@
 package com.rubber.admin.core.plugins.result;
 
-import com.rubber.common.utils.result.ResultMsg;
+import com.rubber.base.components.util.result.ResultMsg;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.core.MethodParameter;
 import org.springframework.http.MediaType;

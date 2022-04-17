@@ -21,7 +21,7 @@ import com.rubber.admin.core.system.service.ISysMenuService;
 import com.rubber.admin.core.system.service.ISysRoleMenuService;
 import com.rubber.admin.core.tools.ArrayHashMap;
 import com.rubber.admin.core.tools.ServletUtils;
-import com.rubber.common.utils.result.code.SysCode;
+import com.rubber.base.components.util.result.code.SysCode;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.CollectionUtils;

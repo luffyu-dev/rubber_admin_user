@@ -12,7 +12,7 @@ import com.rubber.admin.core.system.model.SysUserRoleModel;
 import com.rubber.admin.core.system.service.ISysRoleService;
 import com.rubber.admin.core.system.service.ISysUserRoleService;
 import com.rubber.admin.core.system.service.ISysUserService;
-import com.rubber.common.utils.result.code.SysCode;
+import com.rubber.base.components.util.result.code.SysCode;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

@@ -5,7 +5,7 @@ import cn.hutool.core.util.URLUtil;
 import com.alibaba.fastjson.JSON;
 import com.rubber.admin.core.exceptions.AdminRunTimeException;
 import com.rubber.admin.core.plugins.page.PageModel;
-import com.rubber.common.utils.result.code.SysCode;
+import com.rubber.base.components.util.result.code.SysCode;
 
 /**
  * <p>基础的Controller方法</p>

@@ -1,7 +1,7 @@
 package com.rubber.admin.web.controller;
 
 import com.rubber.admin.core.system.model.SysUserRoleModel;
-import com.rubber.common.utils.result.ResultMsg;
+import com.rubber.base.components.util.result.ResultMsg;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 

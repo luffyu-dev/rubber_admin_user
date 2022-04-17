@@ -4,7 +4,7 @@ import com.rubber.admin.core.exceptions.AdminException;
 import com.rubber.admin.core.system.model.UserInfoModel;
 import com.rubber.admin.core.system.service.ISysUserService;
 import com.rubber.admin.core.tools.ServletUtils;
-import com.rubber.common.utils.result.ResultMsg;
+import com.rubber.base.components.util.result.ResultMsg;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

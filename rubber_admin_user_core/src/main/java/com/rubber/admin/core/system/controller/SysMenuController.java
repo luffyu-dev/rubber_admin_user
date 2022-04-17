@@ -8,7 +8,7 @@ import com.rubber.admin.core.system.entity.SysMenu;
 import com.rubber.admin.core.system.exception.MenuException;
 import com.rubber.admin.core.system.model.TreeDataModel;
 import com.rubber.admin.core.system.service.ISysMenuService;
-import com.rubber.common.utils.result.ResultMsg;
+import com.rubber.base.components.util.result.ResultMsg;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;

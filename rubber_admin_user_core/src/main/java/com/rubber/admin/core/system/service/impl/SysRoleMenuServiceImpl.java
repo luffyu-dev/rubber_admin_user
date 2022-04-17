@@ -11,7 +11,7 @@ import com.rubber.admin.core.system.entity.SysRoleMenu;
 import com.rubber.admin.core.system.exception.RoleException;
 import com.rubber.admin.core.system.mapper.SysRoleMenuMapper;
 import com.rubber.admin.core.system.service.ISysRoleMenuService;
-import com.rubber.common.utils.result.code.SysCode;
+import com.rubber.base.components.util.result.code.SysCode;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

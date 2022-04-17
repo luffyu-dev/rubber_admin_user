@@ -1,9 +1,9 @@
 package com.rubber.admin.core.exceptions;
 
 
-import com.rubber.common.utils.result.IResultHandle;
-import com.rubber.common.utils.result.code.ICodeHandle;
-import com.rubber.common.utils.result.exception.BaseResultException;
+import com.rubber.base.components.util.result.IResultHandle;
+import com.rubber.base.components.util.result.code.ICodeHandle;
+import com.rubber.base.components.util.result.exception.BaseResultException;
 
 /**
  * @author luffyu

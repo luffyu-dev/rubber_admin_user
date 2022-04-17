@@ -7,7 +7,7 @@ import com.rubber.admin.core.plugins.page.PageModel;
 import com.rubber.admin.core.system.entity.SysDept;
 import com.rubber.admin.core.system.exception.DeptException;
 import com.rubber.admin.core.system.service.ISysDeptService;
-import com.rubber.common.utils.result.ResultMsg;
+import com.rubber.base.components.util.result.ResultMsg;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;

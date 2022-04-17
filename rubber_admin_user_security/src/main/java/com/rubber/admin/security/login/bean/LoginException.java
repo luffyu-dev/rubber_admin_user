@@ -1,8 +1,8 @@
 package com.rubber.admin.security.login.bean;
 
 import com.rubber.admin.core.exceptions.AdminRunTimeException;
-import com.rubber.common.utils.result.IResultHandle;
-import com.rubber.common.utils.result.code.ICodeHandle;
+import com.rubber.base.components.util.result.IResultHandle;
+import com.rubber.base.components.util.result.code.ICodeHandle;
 
 /**
  * @author luffyu
