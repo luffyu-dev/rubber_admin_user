@@ -14,7 +14,6 @@ import com.rubber.admin.core.tools.ServletUtils;
 import com.rubber.base.components.util.result.code.SysCode;
 import org.springframework.stereotype.Service;
 
-import javax.validation.constraints.NotNull;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -127,7 +126,7 @@ public class SysDeptServiceImpl extends BaseAdminService<SysDeptMapper, SysDept>
      * @param sysDept 当前部门信息
      * @return 返回当前菜单的数量
      */
-    private int countChildrenNum(@NotNull SysDept sysDept){
+    private int countChildrenNum(SysDept sysDept){
         QueryWrapper<SysDept> queryWrapper = new QueryWrapper<>();
         queryWrapper.eq("parent_id",sysDept.getDeptId());
         return count(queryWrapper);
