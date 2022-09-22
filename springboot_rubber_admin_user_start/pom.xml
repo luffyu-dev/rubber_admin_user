@@ -5,7 +5,7 @@
     <parent>
         <artifactId>rubber_admin_user</artifactId>
         <groupId>com.rubber.admin</groupId>
-        <version>1.1.0-ALPHA</version>
+        <version>1.2.0-ALPHA</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>springboot_rubber_admin_user_start</artifactId>

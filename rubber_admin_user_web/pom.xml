@@ -5,12 +5,11 @@
     <parent>
         <artifactId>rubber_admin_user</artifactId>
         <groupId>com.rubber.admin</groupId>
-        <version>1.1.0-ALPHA</version>
+        <version>1.2.0-ALPHA</version>
     </parent>
 
     <groupId>com.rubber.admin.web</groupId>
     <artifactId>rubber_admin_user_web</artifactId>
-    <version>1.0.1</version>
     <name>rubber-admin-test</name>
     <description>Demo project for Spring Boot</description>
 
@@ -43,10 +42,10 @@
             <version>${rubber.version}</version>
         </dependency>
 
-        <dependency>
-            <groupId>com.rubber</groupId>
-            <artifactId>base_config</artifactId>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.rubber</groupId>-->
+<!--            <artifactId>base_config</artifactId>-->
+<!--        </dependency>-->
 
     </dependencies>
 

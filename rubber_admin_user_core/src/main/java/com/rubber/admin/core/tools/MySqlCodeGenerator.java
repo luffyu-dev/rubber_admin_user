@@ -26,7 +26,7 @@ public class MySqlCodeGenerator {
     /**
      * 链接的数据库配置
      */
-    private static final String JDBC_URL = "jdbc:mysql://127.0.0.1:3306/rubber_admin?useUnicode=true&amp;characterEncoding=utf-8&amp;autoReconnect=true";
+    private static final String JDBC_URL = "jdbc:mysql://127.0.0.1:3306/rubber_admin?useUnicode=true&characterEncoding=utf-8&autoReconnect=true";
     private static final String USER_NAME = "root";
     private static final String PASSWORD = "root";
 
